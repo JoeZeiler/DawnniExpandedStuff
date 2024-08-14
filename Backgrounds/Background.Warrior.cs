@@ -3,11 +3,7 @@ using Dawnsbury.Core.CharacterBuilder.Feats;
 using Dawnsbury.Core.CharacterBuilder;
 using Dawnsbury.Core.Mechanics.Enumerations;
 using Dawnsbury.Modding;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dawnsbury.Mods.DawnniExpanded.Backgrounds
 {
@@ -27,7 +23,7 @@ namespace Dawnsbury.Mods.DawnniExpanded.Backgrounds
         {
 
             WarriorBackground = new BackgroundSelectionFeat(FeatName.CustomFeat, "In your younger days, you waded into battle as a mercenary, a warrior defending a nomadic people, or a member of a militia or army. You might have wanted to break out from the regimented structure of these forces, or you could have always been as independent a warrior as you are now."
-                , "Choose two ability boosts. One must be to {b}Strength{/b} or {b}Constitution{/b}, and one is a free ability boost.\r\nYou're trained in the{b}Intimidation{/b} skill. You gain the {b}Intimidating Glare{/b} feat."
+                , "You're trained in the {b}Intimidation{/b} skill. You gain the {b}Intimidating Glare{/b} feat."
                 , new List<AbilityBoost> { new LimitedAbilityBoost(Ability.Strength, Ability.Constitution), new FreeAbilityBoost() })
                 .WithOnSheet(delegate (CalculatedCharacterSheetValues sheet)
                 {
